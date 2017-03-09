@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="style-eve.css"><!-- Resource style -->
+	<link rel="stylesheet" href="../css/flipclock.css"> <!--flip clock style-->
+	<style>
+.flipbox
+{
+font-family:"georgia";
+padding:7px;
+background-color:#666666;
+border:solid 1px purple;
+cursor:pointer;
+}
+.panel
+{
+padding:10px;
+text-align:center;
+background-color:#666666;
+border:solid 1px purple;
+text-align:center;
+}
+.panel
+{
+padding:10px;
+display:none;
+}
+</style>
+	<script src="../js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="../js/jquery-2.1.0.js"></script>
+  	<script src="../js/flipclock.js"></script>
+
+	<title>Hashtrix v1.0-Events</title>
+    <link rel="shortcut icon" href="../img/ico.ico"/>
+</head>
+<body>
+	<header class="cd-header">
+		<div id="cd-logo">Hashtrix v1.0-Events</div>
+
+		<nav class="cd-main-nav">
+			<ul>
+				<!-- inser more links here -->
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="../reg/register.html">Register</a></li>
+				<li><a href="../gallery/gallery.html">Gallery</a></li>
+				<li><a href="../sponsors/sponsors.html">Sponsors</a></li>
+				<li><a href="../about/about.html">About Us</a></li>
+				<li><a href="../contact/contact.html">Contact Us</a></li>
+			</ul>
+		</nav> <!-- cd-main-nav -->
+	</header>
+	<section id="cd-intro">
+		<div id="cd-intro-background"></div>
+		<div id="cd-intro-tagline">		</div> 
+		<!-- cd-intro-tagline -->
+	</section>
+	<main class="cd-content">
+		<div class="cd-container">
+			<h2>List of Events</h2>
+			<p>Hashtrix v1.0 is gonna be a core technical symposium that gonna hijack your minds for whole day. Keep hashing all the day but don't miss out the fun alongside.</p>
+			<p>There are 8 events in total. Click on each to view description of the event.</p>
+			
+			<div class="flipbox">#001 TECHWIZ (click here)</div>  <!-- Techwiz-->
+				<div class="panel">
+					<p>#001 Desc: Technical quiz</p>
+					<li>Two members per team.</li>
+					<li>Prelims will be conducted.</li>
+			</div>
+			
+			<div class="flipbox">#002 TAKE DIVERSION (click here)</div>  <!-- Take Diversion-->
+				<div class="panel">
+					<p>#002 Desc: Programming based event</p>
+					<li>Two members per team.</li>
+					<li>Write alternate code for the given programs.</li>
+					<li>Programs will be from C and C++.</li>
+					<li>Prelims will be conducted.</li>
+			</div>
+			
+			<div class="flipbox">#003 WORD MAESTRO (click here)</div>  <!-- Word Maestro-->
+				<div class="panel">
+					<p>#003 Desc: Word Hunt</p>
+					<li>Two members per team.</li>
+					<li>Prelims will be conducted.</li>
+			</div>
+			
+			<div class="flipbox">#004 PRESENTRIX (click here)</div>  <!-- Presentrix-->
+				<div class="panel">
+					<p>#004 Desc: Paper Presentation</p>
+					<li>Two members per team.</li>
+					<li>Theme:- Advancements in (any one) <br>i.Computer Software<br>ii.Computer Hardware<br>iii.Networking</li>
+					<li>Duration 5 min (Presentation-3min, Q&A- 2min).</li>
+					<li>Last date for paper submission is 8th of January 2015 before 6.00 PM.</li>
+					<li>Papers or PPts  should be mailed to hashtrix.v1.0@gmail.com</li>
+					<li>Participants should bring their PPTs in pen drive</li>
+			</div>
+			
+			<div class="flipbox">#005 HASH MARKET (click here)</div>  <!-- Hash Market-->
+				<div class="panel">
+					<p>#005 Desc: Advertisement Making</p>
+					<li>Four members per team.</li>
+					<li>Materials should be brought by the participants.</li>
+					<li>Topic will be given on spot.</li>
+			</div>
+			
+			<div class="flipbox">#006 SPIDERZ (click here)</div>  <!-- Spiderz-->
+				<div class="panel">
+					<p>#006 Desc: Web Designing</p>
+					<li>Two members per team.</li>
+					<li>Theme of website will be given on spot.</li>
+					<li>Tools: Dreamweaver, Photoshop, Flash.</li>
+					<li>Prelims will be conducted</li>
+			</div>
+			
+			<div class="flipbox">#007 RIVALZ (click here)</div>  <!-- Rivalz-->
+				<div class="panel">
+					<p>#007 Desc: Gaming</p>
+					<li>Two games will be conducted (2048, NFS Most Wanted)</li>
+					<li>Only one person per game is allowed.</li>	
+			</div>
+			
+			<div class="flipbox">#008 ULTIMATE HASHTRIX (click here)</div>  <!-- Ultimate Hashtrix-->
+				<div class="panel">
+					<p>#008 Desc: IQ Test</p>
+					<li>Only one person will be allowed to participate per college.</li>
+					<li>Person with maximum IQ on that day will grab the prize.</li>	
+			</div>
+			<br>
+			<center><p> -------------------- Happy Hashing --------------------</p></center>
+		</div>  <!-- cd container-->
+	</main> <!-- cd-content -->
+	
+<div class="clock" style="margin:2em;"></div>
+		<script type="text/javascript">
+		   var clock;
+		   var cur_date=new Date();
+			var fut_date=new Date('2015-01-10 9:30 am');
+			var diff = fut_date.getTime() / 1000 - cur_date.getTime() / 1000;
+			$(document).ready(function() {
+			clock=$('.clock').FlipClock(diff,{clockFace:'DailyCounter',countdown:true});
+			});
+			
+		   </script>
+	<script src="../js/main.js"></script> 
+	<script>
+	$(document).ready(function(){
+		$(".flipbox").click(function(){
+		$(this).next().slideToggle();
+		});
+	});
+	</script>
+
+</body>
+</html>

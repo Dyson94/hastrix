@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="style-about.css"><!-- Resource style -->
+	<link rel="stylesheet" href="../css/flipclock.css"> <!--flip clock style-->
+	
+    
+	<style>
+	.content1{
+		font-family:"georgia";
+		font-size:20px;
+	}
+	
+	</style>
+	<script src="../js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="../js/jquery-2.1.0.js"></script>
+  	<script src="../js/flipclock.js"></script>
+
+	<title>Hashtrix v1.0-About Us</title>
+	<link rel="shortcut icon" href="../img/ico.ico"/>
+    
+</head>
+<body>
+	<header class="cd-header">
+		<div id="cd-logo">Hashtrix v1.0-About</div>
+
+		<nav class="cd-main-nav">
+			<ul>
+				<!-- inser more links here -->
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../events/events.html">Events</a></li>
+				<li><a href="../reg/register.html">Register</a></li>
+				<li><a href="../gallery/gallery.html">Gallery</a></li>
+				<li><a href="../sponsors/sponsors.html">Sponsors</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="../contact/contact.html">Contact Us</a></li>
+			</ul>
+		</nav> <!-- cd-main-nav -->
+	</header>
+
+<main class="cd-content">
+		<div class="cd-container">
+			<h2>KG College of Arts and Science</h2>
+			<p>KG College of Arts and Science (KGCAS) was started in the year 2005 with the intent to provide quality education at the undergraduate level and post-graduate level, focusing primarily on meeting the talent requirements of the domestic and global IT and IT-enabled service providers.
+			</p>
+			<p>The infrastructure available in the institution for the pursuit of IT and ITES education is unparalleled. A very liberal scholarship provides for opportunities for economically challenged yet academically brilliant students to take up courses at the college.</p>
+        	<p>Choosing the right institution for the future will depend on the proximity of such institutions with the industry. KG College of Arts and Science, an Institution sponsored by KG Information Systems Private Limited, is the perfect match to an Industry-Institute learning environment. We call it 'Campus Inside' where learning takes place within the precinct of Industry.</p>
+        	<p>The KG College of Arts and Science is located on the KG Campus, a sprawling 40-acre campus, just 8 kms from city, which also houses the BPO, Software, Call Center operations of KGISL apart from co-location of its institute of higher learning. The Campus presents the perfect integration of Institute - Industry - Infrastructure in an environment of perfecting learning - the foothills of the Western Ghats, Coimbatore.</p>
+      	 	<p>The placement opportunities start from the time you join such future-thinking programmes. What better then, will be an opportunity, than mentoring yourself at an institution sponsored by an Industry.</p>
+
+		</div>  <!-- cd container-->
+	</main> <!-- cd-content -->
+
+<div class="clock" style="margin:2em;"></div>
+		<script type="text/javascript">
+		   var clock;
+		   var cur_date=new Date();
+			var fut_date=new Date('2015-01-10 9:30 am');
+			var diff = fut_date.getTime() / 1000 - cur_date.getTime() / 1000;
+			$(document).ready(function() {
+			clock=$('.clock').FlipClock(diff,{clockFace:'DailyCounter',countdown:true});
+			});
+			
+		   </script>
+	<script src="../js/main.js"></script> 
+	
+</body>
+</html>

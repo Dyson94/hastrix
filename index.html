@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"><!-- Resource style -->
+	<link rel="stylesheet" href="css/flipclock.css"> <!--flip clock style-->
+	 <style>
+	 
+	 	a:hover{
+			color:#FF3300;
+			text-decoration:underline;
+		}
+	
+	 </style>
+	<script src="js/jquery-2.1.0.js"></script>
+  	<script src="js/flipclock.js"></script>
+
+	<title>Hashtrix v1.0</title>
+    <link rel="shortcut icon" href="img/ico.ico"/>
+</head>
+<body>
+	<header class="cd-header">
+		<div id="cd-logo">Hashtrix v1.0</div>
+
+		<nav class="cd-main-nav">
+			<ul>
+				<!-- inser more links here -->
+				<li><a href="index.html">Home</a></li>
+				<li><a href="events/events.html">Events</a></li>
+				<li><a href="reg/register.html">Register</a></li>
+				<li><a href="gallery/gallery.html">Gallery</a></li>
+				<li><a href="sponsors/sponsors.html">Sponsors</a></li>
+				<li><a href="about/about.html">About Us</a></li>
+				<li><a href="contact/contact.html">Contact Us</a></li>
+			</ul>
+		</nav> <!-- cd-main-nav -->
+	</header>
+
+	<section id="cd-intro">
+		<div id="cd-intro-background"></div>
+		<div id="cd-intro-tagline">		</div> 
+		<!-- cd-intro-tagline -->
+	</section> <!-- #cd-intro -->
+
+	<main class="cd-content">
+		<div class="cd-container">
+			<h2>KG College of Arts and Science presents</h2>
+			<p> Hashtrix v1.0 - an inter-collegiate state level technical symposium by the science dept. students. It is an excellent event where the students of various Arts and Science & Engineering colleges over various districts gather together to showcast their talents. </p>
+
+			
+			<center>
+			<div class="vid">
+	   
+	   			<p>Watch the official trailer of Hashtrix v1.0 on YouTube
+				</p>
+				<iframe width="560" height="315" src="//www.youtube.com/embed/_EAPH6OZ8EI" frameborder="0" allowfullscreen></iframe>
+	   </div>
+	   		<div class="lik">
+	   		<p><a href="http://www.facebook.com/hashtrix.v1.0"><img src="img/likebutton.jpg" width="200" height="50" ><br> fb.com/hashtrix.v1.0</a></p>
+			</div>
+			</center>
+			<p>Let us all wait for that one big day 10th JANUARY 2015 !!! Please register your college and show off your talents !</p>
+			
+			<div class="ball">
+       <ul class="ca-menu">
+         <li>	<!--ball 1-->
+                        <a href="reg/register.html">           </a>
+                        <div class="ca-content">
+               <h2 class="ca-main style1"><a href="reg/register.html" class="style2">REGISTER<br>Click here</a></h2>
+           </div>
+               <a href="reg/register.html"></a> </li>
+                    
+          <li>	<!--ball 2-->
+                        <a href="events/events.html">           </a>
+                        <div class="ca-content"> 
+               <h2 class="ca-main style1"><a href="events/events.html" class="style2">EVENTS<br>Click here</a></h2>
+                                
+           </div>
+               <a href="events/events.html"></a>           </li>      
+				
+			<li>	<!--ball 3-->
+                        <a href="gallery/gallery.html">           </a>
+                        <div class="ca-content">
+               <h2 class="ca-main style1"><a href="gallery/gallery.html" class="style2">GALLERY<br>Click here</a></h2>
+                                
+           </div>
+               <a href="gallery/gallery.html"></a>           </li>
+              </ul>
+                    
+     
+       </div>  <!--ball-->
+	   
+	   
+	   
+	   
+		</div>  <!-- cd container-->
+	</main> <!-- cd-content -->
+	<div class="clock" style="margin:2em;"></div>
+		<script type="text/javascript">
+		   var clock;
+		   var cur_date=new Date();
+			var fut_date=new Date('2015-01-10 9:30 am');
+			var diff = fut_date.getTime() / 1000 - cur_date.getTime() / 1000;
+			$(document).ready(function() {
+			clock=$('.clock').FlipClock(diff,{clockFace:'DailyCounter',countdown:true});
+			});
+			
+		   </script>
+	<script src="js/main.js"></script> 
+	<!-- Resource jQuery -->
+	</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="style-contact.css"><!-- Resource style -->
+	<link rel="stylesheet" href="../css/flipclock.css"> <!--flip clock style-->
+	
+    <link rel="shortcut icon" href="../img/ico.ico"/>
+	<style>
+	.content1{
+		font-family:"georgia";
+		font-size:20px;
+	}
+	.content2{
+		font-family:"georgia";
+		font-size:20px;
+	}
+	.content3{
+		font-family:"georgia";
+		font-size:20px;
+	}
+	</style>
+	<script src="../js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="../js/jquery-2.1.0.js"></script>
+  	<script src="../js/flipclock.js"></script>
+
+	<title>Hashtrix v1.0-Contact Us</title>
+    
+</head>
+<body>
+	<header class="cd-header">
+		<div id="cd-logo">Hashtrix v1.0-Contact</div>
+
+		<nav class="cd-main-nav">
+			<ul>
+				<!-- inser more links here -->
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../events/events.html">Events</a></li>
+				<li><a href="../reg/register.html">Register</a></li>
+				<li><a href="../gallery/gallery.html">Gallery</a></li>
+				<li><a href="../sponsors/sponsors.html">Sponsors</a></li>
+				<li><a href="../about/about.html">About Us</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav> <!-- cd-main-nav -->
+	</header>
+
+
+<main class="cd-content">
+	
+		<div class="cd-container">
+			<h2>Communication Address</h2>
+			<div class="content1">
+			KGiSL Campus<br>365, Thudiyalur Road,<br>Saravanampatti,<br>Coimbatore - 641035.<br>Phone:0422-4419999.Mobile No:9095222222.
+			<br>Fax:+ 91 - 422 - 266 8325.
+			<br>e-mail : <font color="#FF6600"> info@kgcas.ac.in</font>
+			
+			</div>
+			<div class="content2">
+			<h2>Hashtrix Head</h2>
+			Mr.Suresh Kumar (Asst. Prof.) 
+			<br>Mobile No.: 9003454634
+			<h2>Student Co-ordinators</h2>
+			Mr.Subin - 8015737815
+			<br>Mr.SaravanaKumar - 7667558875<br>
+			
+			</div>
+			
+			<div class="content3">
+				<h2>Designed and Developed by</h2>
+				Subin Guruvayurappan - B.Sc IT
+				<br>Mukesh Ravi Krishnan - B.Sc CS
+				<br>Dinesh Velusamy - B.Sc CT
+				
+			</div>
+			
+			
+		</div>  <!-- cd container-->
+	</main> <!-- cd-content -->
+
+<div class="clock" style="margin:2em;"></div>
+		<script type="text/javascript">
+		   var clock;
+		   var cur_date=new Date();
+			var fut_date=new Date('2015-01-10 9:30 am');
+			var diff = fut_date.getTime() / 1000 - cur_date.getTime() / 1000;
+			$(document).ready(function() {
+			clock=$('.clock').FlipClock(diff,{clockFace:'DailyCounter',countdown:true});
+			});
+			
+		   </script>
+		
+	<script src="../js/main.js"></script> 
+	
+</body>
+</html>

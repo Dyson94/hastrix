@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="style-gallery.css"><!-- Resource style -->
+	<link rel="stylesheet" href="gal.css">
+	<link rel="stylesheet" href="../css/flipclock.css"> <!--flip clock style-->
+	
+    
+	<style>
+	.navi{
+		float:right;
+	}
+	.vv a{
+	font-family:"georgia";
+	color:#FFFFFF;
+	}
+	</style>
+	<script src="../js/jquery-2.1.0.js"></script>
+  	<script src="../js/flipclock.js"></script>
+	<script src="slider.js"></script>
+	
+	
+	
+	<title>Hashtrix v1.0-KGCAS Gallery</title>
+	<link rel="shortcut icon" href="../img/ico.ico"/>
+    
+</head>
+<body>
+	<header class="cd-header">
+		<div id="cd-logo">Hashtrix v1.0-KGCAS</div>
+
+		<nav class="cd-main-nav">
+			<ul>
+				<!-- inser more links here -->
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../events/events.html">Events</a></li>
+				<li><a href="../reg/register.html">Register</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="../sponsors/sponsors.html">Sponsors</a></li>
+				<li><a href="../about/about.html">About Us</a></li>
+				<li><a href="../contact/contact.html">Contact Us</a></li>
+			</ul>
+		</nav> <!-- cd-main-nav -->
+	</header>
+
+<main class="cd-content">
+		
+	<p></p>
+		<div class="banner">
+			<ul>
+				<li style="background-image:url(banner2.jpg)">
+				</li>
+				
+				<li style="background-image: url('1.jpg')">
+				</li>
+				
+				<li style="background-image:url(2.jpg)">
+				</li>
+				
+				<li style="background-image: url(4.jpg)">
+				</li>
+				
+				<li style="background-image:url(banner4.jpg)"
+				</li>
+				
+				<li style="background-image: url(5.jpg)">
+				</li>
+				<li style="background-image:url(banner6.jpg)"
+				</li>
+				<li style="background-image: url(7.jpg)">
+				</li>
+				<li style="background-image: url(8.jpg)">
+				</li>
+				<li style="background-image: url(9.jpg)">
+				</li>
+				<li style="background-image: url(11.jpg)">
+				</li>
+				
+				
+			</ul>
+		</div>
+			
+			<!-- The HTML -->
+			<div class="vv">
+<a href="#" class="unslider-arrow prev">Previous</a>
+<div class="navi">
+<a href="#" class="unslider-arrow next">Next</a>
+			</div>
+			</div>
+		  <!-- cd container-->
+	</main> <!-- cd-content -->
+
+<div class="clock" style="margin:2em;"></div>
+		<script type="text/javascript">
+		   var clock;
+		   var cur_date=new Date();
+			var fut_date=new Date('2015-01-10 9:30 am');
+			var diff = fut_date.getTime() / 1000 - cur_date.getTime() / 1000;
+			$(document).ready(function() {
+			clock=$('.clock').FlipClock(diff,{clockFace:'DailyCounter',countdown:true});
+			});
+			
+		   </script>
+	<script src="../js/main.js"></script> 
+	
+	
+	<script>  <!-- Slider-->
+			if(window.chrome) {
+				$('.banner li').css('background-size', '100% 100%');
+			}
+			
+			$('.banner').unslider({
+				fluid: true,
+				dots: true,
+				speed: 500
+			});
+		
+			//  Find any element starting with a # in the URL
+			//  And listen to any click events it fires
+			$('a[href^="#"]').click(function() {
+				//  Find the target element
+				var target = $($(this).attr('href'));
+				
+				//  And get its position
+				var pos = target.offset(); // fallback to scrolling to top || {left: 0, top: 0};
+				
+				//  jQuery will return false if there's no element
+				//  and your code will throw errors if it tries to do .offset().left;
+				if(pos) {
+					//  Scroll the page
+					$('html, body').animate({
+						scrollTop: pos.top,
+						scrollLeft: pos.left
+					}, 1000);
+				}
+				
+				//  Don't let them visit the url, we'll scroll you there
+				return false;
+			});
+			
+			var GoSquared = {acct: 'GSN-396664-U'};
+		</script>
+		
+		<script>
+    var unslider = $('.banner').unslider();
+    
+    $('.unslider-arrow').click(function() {
+        var fn = this.className.split(' ')[1];
+        
+        //  Either do unslider.data('unslider').next() or .prev() depending on the className
+        unslider.data('unslider')[fn]();
+    });
+</script>
+</body>
+</html>
